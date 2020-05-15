@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>QuidRefTest2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Imgs/BP-icon.png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147273812-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-147273812-1');
+  </script>
+
+    <!--<script>
+      var i = 0
+      var score = 0
+      var source = ['https://giphy.com/embed/l1D8H0PAU2CFLYEuiH',
+                    'https://giphy.com/embed/gIelRXqsehpglqcPLt',
+                    'https://giphy.com/embed/TdXRnvLgPrDi6ZPc5F',
+                    'https://giphy.com/embed/jn8AwjUv4oKbA3m6AD',
+                    'https://giphy.com/embed/ln1d5zjrV08ZLSrQeD']
+      var yesButton = ['Correct \nThe foul is : Shirt pulling (Standard Contact Penalty) \nThe Penalty is: Yellow Card',
+                       'Correct \nThe foul is : Illegally contacting an opponent with a held bludger \nThe Penalty is: Blue Card',
+                       'Correct \nThe foul is : Neck Contact (Standard Contact Penalty) \nThe Penalty is: Yellow Card',
+                       'Correct \nThe foul is : Back Contact (Standard Contact Penalty) \nThe Penalty is: Yellow Card',
+                       'Correct \nThe foul is : Contact from behind (Minor) \nThe Penalty is: Back to hoops']
+      var noButton  = ['Incorrect \nThe foul is : Shirt pulling (Standard Contact Penalty) \nThe Penalty is: Yellow Card',
+                       'Incorrect \nThe foul is : Illegally contacting an opponent with a held bludger \nThe Penalty is: Blue Card',
+                       'Incorrect \nThe foul is : Neck Contact (Standard Contact Penalty) \nThe Penalty is: Yellow Card',
+                       'Incorrect \nThe foul is : Back Contact (Standard Contact Penalty) \nThe Penalty is: Yellow Card',
+                       'Incorrect \nThe foul is : Contact from behind (Minor) \nThe Penalty is: Back to hoops']
+      var vidLink = ['https://youtu.be/dzjLsffrqoI?t=4260',]
+      var corYes = [1, 1, 1, 1, 1] //1 if foul, 0 if no
+      var corNo = [0, 0, 0, 0, 0]
+      function butfunc(buttonlist, cor){
+        //display output
+        alert(buttonlist[i]);
+        if(cor[i] == 1){
+          score +=1;
+        }
+        //next iteration
+        i +=1;
+        if(i < source.length){
+        //set up next question
+        //gif
+        document.getElementById('gifplayer').src = source[i];
+        document.getElementById('vid-lnk').href = vidLink[i];
+        //update score
+        document.getElementById('score').innerHTML = 'Score = ' + score + '/' + i; //fraction score
+
+        }else{
+          alert('Final Score: ' + score + '/' + i
+                + ' (' + ((score/i)*100).toPrecision(3) + '%)' //percentage
+               );
+          window.location.href = 'https://gayyoda.github.io/QuidRefTest2/';
+        };
+      }
+    </script>-->
+  </head>
+  <div class="q-container">
+    <div class="q-banner">
+      <img src="Imgs/coverimg.png" alt = "Logo Banner" class="banner-img">
+    </div>
+    <div class="q-instruction-box">
+      <h3 class="q-instruction">
+        select the appropriate penalty
+      </h3>
+    </div>
+    <div class="q-gif-box">
+      <iframe id="gifplayer" class="player" src="https://giphy.com/embed/l1D8H0PAU2CFLYEuiH" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div>
+    <div class="q-card-box">
+      <div class="q-card-red"><button id="redcard">.</button></div>
+      <div class="q-card-yellow"><button id="yellcard">.</button></div>
+      <div class="q-card-blue"><button id="bluecard">.</button></div>
+      <div class="q-card-spec"><button id="specialcard">Special</button></div>
+      <div class="q-card-nopen"><button id="nopen">No Penalty</button></div>
+    </div>
+    <div class="q-score-box">
+      <div class="q-score-txt">
+        <p id="score">Score: 0/0</p>
+      </div>
+      <div class="q-srclnk-box">
+        <button id="srcbut">src</button>
+      </div>
+    </div>
+    <div class="q-opts-box">
+      <div class="q-restart"><button id="restart">Restart</button></div>
+      <div class="q-finish"><button id="finish">Finish</button></div>
+    </div>
+    <div class="q-fter">
+      <div class="ft-container">
+  <!--Twitter Link-->
+  <div class="ft-twitter">
+    <a href="https://twitter.com/TreasDev?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false" target="_blank">Follow @TreasDev</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  <!--GitHub Link-->
+    <a href="https://github.com/TreasDev" target="_blank" class="ft-gh-link"><img src="Imgs/GitHub.png" class="ft-github"></a>
+  <!--Name-->
+  <p class="ft-name">Alex Healey</p>
+  <p class="ft-space"> </p>
+  </div>
+    </div>
+  </div>
+  <script src="jscript.js"></script>
+</html>
